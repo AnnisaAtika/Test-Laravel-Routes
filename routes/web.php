@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Task 1: point the main "/" URL to the HomeController method "index"
-// Put one code line here below
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Task 2: point the GET URL "/user/[name]" to the UserController method "show"
@@ -33,7 +33,7 @@ use Illuminate\Support\Facades\Route;
 
 
 // Task 5: group the following route sentences below in Route::group()
-// Assign middleware "auth"
+// Assign middleware "auth" 
 // Put one Route Group code line here below
 
     // Tasks inside that Authenticated group:
